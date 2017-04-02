@@ -91,7 +91,7 @@ public class CategoryController {
 
         categoryService.save(category);
 
-        redirectAttributes.addFlashAttribute("flash",new FlashMessage("Category successfully updated!", FlashMessage.Status.SUCCESS));
+        redirectAttributes.addFlashAttribute("flash",new FlashMessage("Category was successfully updated!", FlashMessage.Status.SUCCESS));
 
         // TODO: Redirect browser to /categories
         return "redirect:/categories";
@@ -114,7 +114,7 @@ public class CategoryController {
 
         categoryService.save(category);
 
-        redirectAttributes.addFlashAttribute("flash",new FlashMessage("Category successfully added!", FlashMessage.Status.SUCCESS));
+        redirectAttributes.addFlashAttribute("flash",new FlashMessage("Category was successfully added!", FlashMessage.Status.SUCCESS));
 
         // TODO: Redirect browser to /categories
         return "redirect:/categories";

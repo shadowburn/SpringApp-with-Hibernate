@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 <head th:replace="layout :: head('favorites')"></head>
 <body>
 <div th:replace="layout :: nav"></div>
@@ -10,7 +10,7 @@
         <img class="circle" th:src="@{/images/me.jpg}" alt="avatar" />
     </div>
     <div class="col s9= l12">
-        <h2 th:text="${username}">Jane Doe</h2>
+        <!--<h2 th:text="${username}">Jane Doe</h2>-->
         <div class="meta" th:text="|${#lists.size(gifs)} Favorites|"></div>
     </div>
 </div>

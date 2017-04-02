@@ -69,7 +69,7 @@ public class GifController {
         gifService.save(gif,file);
 
         // Add flash message for success
-        redirectAttributes.addFlashAttribute("flash",new FlashMessage("GIF successfully uploaded!", FlashMessage.Status.SUCCESS));
+        redirectAttributes.addFlashAttribute("flash",new FlashMessage("GIF was successfully uploaded!", FlashMessage.Status.SUCCESS));
 
         // TODO: Redirect browser to new GIF's detail view
         return String.format("redirect:/gifs/%s",gif.getId());
